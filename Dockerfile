@@ -94,6 +94,7 @@ RUN apt-get update && \
     procps \
     # --------------------
     # Dependencies for Minecraft:
+    openjdk-16-jre-headless \
     openjdk-11-jre-headless \
     openjdk-8-jre-headless \
     # --------------------
