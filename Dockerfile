@@ -54,7 +54,6 @@ RUN apt-get update && \
     apt-transport-https \
     dirmngr \
     software-properties-common \
-    add-apt-repository -y ppa:openjdk-r/ppa \
     gnupg \
     ca-certificates && \
     apt-get -y clean && \
@@ -83,6 +82,9 @@ RUN wget -O /tmp/cacert.pem https://curl.haxx.se/ca/cacert.pem && \
 
 # Install AMP dependencies
 RUN ls -al /usr/local/bin/
+
+RUN add-apt-repository -y ppa:openjdk-r/ppa
+
 RUN apt-get update && \
     apt-get install -y \
     # --------------------
