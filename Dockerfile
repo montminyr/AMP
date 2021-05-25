@@ -56,6 +56,7 @@ RUN apt-get update && \
     apt-transport-https \
     dirmngr \
     software-properties-common \
+    add-apt-repository -y ppa:openjdk-r/ppa \
     gnupg \
     ca-certificates && \
     apt-get -y clean && \
