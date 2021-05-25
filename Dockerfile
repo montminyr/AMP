@@ -16,7 +16,7 @@ ENV AMP_SUPPORT_URL="https://github.com/MitchTalmadge/AMP-dockerized/"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN -E add-apt-repository ppa:openjdk-r/ppa
+RUN add-apt-repository -y ppa:openjdk-r/ppa
 
 # Initialize
 RUN apt-get update && \
